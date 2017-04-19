@@ -61,12 +61,75 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.each-async">module each-async</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.each-async.each-async">
+            function <span class="apidocSignatureSpan"></span>each-async
+            <span class="apidocSignatureSpan">(arr, next, cb)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.each-async" id="apidoc.module.each-async">module each-async</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.each-async.each-async" id="apidoc.element.each-async.each-async">
+        function <span class="apidocSignatureSpan"></span>each-async
+        <span class="apidocSignatureSpan">(arr, next, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">each-async = function (arr, next, cb) {
+	var failed = false;
+	var count = 0;
+
+	cb = cb || function () {};
+
+	if (!Array.isArray(arr)) {
+		throw new TypeError(&#x27;First argument must be an array&#x27;);
+	}
+
+	if (typeof next !== &#x27;function&#x27;) {
+		throw new TypeError(&#x27;Second argument must be a function&#x27;);
+	}
+
+	var len = arr.length;
+
+	if (!len) {
+		cb();
+		return;
+	}
+
+	function callback(err) {
+		if (failed) {
+			return;
+		}
+
+		if (err !== undefined &#x26;&#x26; err !== null) {
+			failed = true;
+			cb(err);
+			return;
+		}
+
+		if (++count === len) {
+			cb();
+			return;
+		}
+	}
+
+	for (var i = 0; i &#x3c; len; i++) {
+		setImmediateShim(next, arr[i], i, onetime(callback, true));
+	}
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
