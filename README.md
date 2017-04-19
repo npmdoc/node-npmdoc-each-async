@@ -1,9 +1,14 @@
-# api documentation for  [each-async (v1.1.1)](https://github.com/sindresorhus/each-async)  [![npm package](https://img.shields.io/npm/v/npmdoc-each-async.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-each-async) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-each-async.svg)](https://travis-ci.org/npmdoc/node-npmdoc-each-async)
+# npmdoc-each-async
+
+#### api documentation for  [each-async (v1.1.1)](https://github.com/sindresorhus/each-async)  [![npm package](https://img.shields.io/npm/v/npmdoc-each-async.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-each-async) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-each-async.svg)](https://travis-ci.org/npmdoc/node-npmdoc-each-async)
+
 #### Async concurrent iterator (async forEach)
 
-[![NPM](https://nodei.co/npm/each-async.png?downloads=true)](https://www.npmjs.com/package/each-async)
+[![NPM](https://nodei.co/npm/each-async.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/each-async)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-each-async/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-each-async_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-each-async/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-each-async/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-each-async/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-each-async/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-each-async/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-each-async/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +23,6 @@
 {
     "author": {
         "name": "Sindre Sorhus",
-        "email": "sindresorhus@gmail.com",
         "url": "http://sindresorhus.com"
     },
     "bugs": {
@@ -62,13 +66,11 @@
     "license": "MIT",
     "maintainers": [
         {
-            "name": "sindresorhus",
-            "email": "sindresorhus@gmail.com"
+            "name": "sindresorhus"
         }
     ],
     "name": "each-async",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/sindresorhus/each-async.git"
@@ -79,16 +81,6 @@
     "version": "1.1.1"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module each-async](#apidoc.module.each-async)
-
-
-
-# <a name="apidoc.module.each-async"></a>[module each-async](#apidoc.module.each-async)
 
 
 
