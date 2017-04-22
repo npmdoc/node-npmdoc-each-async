@@ -78,7 +78,8 @@
     "scripts": {
         "test": "mocha --timeout 20000"
     },
-    "version": "1.1.1"
+    "version": "1.1.1",
+    "bin": {}
 }
 ```
 
